@@ -1,56 +1,95 @@
-export default function Membership(){
+export default function Membership() {
   return (
-    <>
-      <h2>ข้อมูลส่วนตัว</h2>
-      <div>
-        <label>ชื่อ-นามสกุล</label>
-        <input type="text" value="aaa bbb"/>
-        <label>อีเมล</label>
-        <input type="email" value="ab@mail.com"/>
-        <label>เบอร์โทรศัพท์</label>
-        <input type="tel" value="09x-xxx-xxxx"/>
-        <label>ที่อยู่จัดส่ง</label>
-        <span>111/22 กรุงเทพมหานคร 12345</span>
-        <button>แก้ไขข้อมูล</button>
+    <div className="flex flex-col max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-xl">
+      <h2 className="text-2xl font-semibold mb-6">ข้อมูลส่วนตัว</h2>
+
+      <div className="flex flex-col gap-4 mb-6">
+        <div>
+          <label className="flex text-sm font-medium">ชื่อ-นามสกุล</label>
+          <input
+            type="text"
+            value="aaa bbb"
+            className="w-full p-2 mt-2 border border-gray-300 rounded-lg"
+            disabled
+          />
+        </div>
+
+        <div>
+          <label className="flex text-sm font-medium">อีเมล</label>
+          <input
+            type="email"
+            value="ab@mail.com"
+            className="w-full p-2 mt-2 border border-gray-300 rounded-lg"
+            disabled
+          />
+        </div>
+
+        <div>
+          <label className="flex text-sm font-medium">เบอร์โทรศัพท์</label>
+          <input
+            type="tel"
+            value="09x-xxx-xxxx"
+            className="w-full p-2 mt-2 border border-gray-300 rounded-lg"
+            disabled
+          />
+        </div>
+
+        <div>
+          <label className="flex text-sm font-medium">ที่อยู่จัดส่ง</label>
+          <span className="block p-2 mt-2 border border-gray-300 rounded-lg bg-gray-100">111/22 กรุงเทพมหานคร 12345</span>
+        </div>
+
+        <div>
+          <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            แก้ไขข้อมูล
+          </button>
+        </div>
       </div>
 
-      <h2>ประวัติการสั่งซื้อ</h2>
-      <div>
-        <table>
+      <h2 className="text-2xl font-semibold mb-6">ประวัติการสั่งซื้อ</h2>
+
+      <div className="overflow-x-auto bg-white rounded-lg shadow-sm">
+        <table className="min-w-full table-auto">
           <thead>
-            <tr>
-              <th>เลขที่สั่งซื้อ</th>
-              <th>วันที่สั่งซื้อ</th>
-              <th>สถานะ</th>
-              <th>ยอดรวม</th>
-              <th>รายละเอียด</th>
+            <tr className="bg-gray-100">
+              <th className="px-6 py-3 text-left text-sm font-medium">เลขที่สั่งซื้อ</th>
+              <th className="px-6 py-3 text-left text-sm font-medium">วันที่สั่งซื้อ</th>
+              <th className="px-6 py-3 text-left text-sm font-medium">สถานะ</th>
+              <th className="px-6 py-3 text-left text-sm font-medium">ยอดรวม</th>
+              <th className="px-6 py-3 text-left text-sm font-medium">รายละเอียด</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>#123</td>
-              <td>12/12/2568</td>
-              <td>รอชำระ</td>
-              <td>568฿</td>
-              <td><button>ดูรายละเอียด</button></td>
+            <tr className="hover:bg-gray-50">
+              <td className="px-6 py-4 text-sm font-medium text-gray-900">#123</td>
+              <td className="px-6 py-4 text-sm">12/12/2568</td>
+              <td className="px-6 py-4 text-sm text-yellow-600">รอชำระ</td>
+              <td className="px-6 py-4 text-sm text-gray-900">568฿</td>
+              <td className="px-6 py-4 text-sm text-blue-500">
+                <button className="hover:underline">ดูรายละเอียด</button>
+              </td>
             </tr>
-            <tr>
-              <td>#124</td>
-              <td>15/11/2568</td>
-              <td>สำเร็จ</td>
-              <td>1250฿</td>
-              <td><button>ดูรายละเอียด</button></td>
+            <tr className="hover:bg-gray-50">
+              <td className="px-6 py-4 text-sm font-medium text-gray-900">#124</td>
+              <td className="px-6 py-4 text-sm">15/11/2568</td>
+              <td className="px-6 py-4 text-sm text-green-600">สำเร็จ</td>
+              <td className="px-6 py-4 text-sm text-gray-900">1250฿</td>
+              <td className="px-6 py-4 text-sm text-blue-500">
+                <button className="hover:underline">ดูรายละเอียด</button>
+              </td>
             </tr>
-            <tr>
-              <td>#125</td>
-              <td>07/09/2568</td>
-              <td>สำเร็จ</td>
-              <td>751฿</td>
-              <td><button>ดูรายละเอียด</button></td>
+            <tr className="hover:bg-gray-50">
+              <td className="px-6 py-4 text-sm font-medium text-gray-900">#125</td>
+              <td className="px-6 py-4 text-sm">07/09/2568</td>
+              <td className="px-6 py-4 text-sm text-green-600">สำเร็จ</td>
+              <td className="px-6 py-4 text-sm text-gray-900">751฿</td>
+              <td className="px-6 py-4 text-sm text-blue-500">
+                <button className="hover:underline">ดูรายละเอียด</button>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
-    </>
-  )
+    </div>
+  );
 }
