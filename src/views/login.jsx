@@ -11,7 +11,7 @@ export default function Login() {
         <input
           type="email"
           placeholder="Enter Your Email"
-          className="bg-white py-2 px-3 w-80 rounded-xl"
+          className="bg-white py-2 px-3 w-80 rounded-xl outline-none"
           required
         />
         <input

@@ -9,38 +9,32 @@ export default function Membership() {
           <input
             type="text"
             value="aaa bbb"
-            className="w-full p-2 mt-2 border border-gray-300 rounded-lg"
+            className="w-full p-2 mt-2 border border-gray-300 rounded-lg mb-4"
             disabled
           />
-        </div>
-
-        <div>
+        
           <label className="flex text-sm font-medium">อีเมล</label>
           <input
             type="email"
             value="ab@mail.com"
-            className="w-full p-2 mt-2 border border-gray-300 rounded-lg"
+            className="w-full p-2 mt-2 border border-gray-300 rounded-lg mb-4"
             disabled
           />
-        </div>
-
-        <div>
+        
           <label className="flex text-sm font-medium">เบอร์โทรศัพท์</label>
           <input
             type="tel"
             value="09x-xxx-xxxx"
-            className="w-full p-2 mt-2 border border-gray-300 rounded-lg"
+            className="w-full p-2 mt-2 border border-gray-300 rounded-lg mb-4"
             disabled
           />
-        </div>
-
-        <div>
+        
           <label className="flex text-sm font-medium">ที่อยู่จัดส่ง</label>
           <span className="block p-2 mt-2 border border-gray-300 rounded-lg bg-gray-100">111/22 กรุงเทพมหานคร 12345</span>
         </div>
 
         <div>
-          <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+          <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 ">
             แก้ไขข้อมูล
           </button>
         </div>
@@ -49,7 +43,7 @@ export default function Membership() {
       <h2 className="text-2xl font-semibold mb-6">ประวัติการสั่งซื้อ</h2>
 
       <div className="overflow-x-auto bg-white rounded-lg shadow-sm">
-        <table className="min-w-full table-auto">
+        <table className="min-w-full">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-6 py-3 text-left text-sm font-medium">เลขที่สั่งซื้อ</th>
@@ -61,7 +55,7 @@ export default function Membership() {
           </thead>
           <tbody>
             <tr className="hover:bg-gray-50">
-              <td className="px-6 py-4 text-sm font-medium text-gray-900">#123</td>
+              <td className="px-6 py-4 text-sm font-medium">#123</td>
               <td className="px-6 py-4 text-sm">12/12/2568</td>
               <td className="px-6 py-4 text-sm text-yellow-600">รอชำระ</td>
               <td className="px-6 py-4 text-sm text-gray-900">568฿</td>
@@ -70,7 +64,7 @@ export default function Membership() {
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="px-6 py-4 text-sm font-medium text-gray-900">#124</td>
+              <td className="px-6 py-4 text-sm font-medium">#124</td>
               <td className="px-6 py-4 text-sm">15/11/2568</td>
               <td className="px-6 py-4 text-sm text-green-600">สำเร็จ</td>
               <td className="px-6 py-4 text-sm text-gray-900">1250฿</td>
@@ -79,7 +73,7 @@ export default function Membership() {
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
-              <td className="px-6 py-4 text-sm font-medium text-gray-900">#125</td>
+              <td className="px-6 py-4 text-sm font-medium">#125</td>
               <td className="px-6 py-4 text-sm">07/09/2568</td>
               <td className="px-6 py-4 text-sm text-green-600">สำเร็จ</td>
               <td className="px-6 py-4 text-sm text-gray-900">751฿</td>
