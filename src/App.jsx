@@ -9,6 +9,9 @@ import Women from "./views/Women";
 import Children from "./views/Children";
 import Brands from "./views/Brands";
 import AuthLayout from "./components/AuthLayout"
+import ForgetPassword from "./views/ForgetPassword";
+import ResetPassword from "./views/ResetPassword";
+import Membership from "./views/Membership";
 
 
 const router = createBrowserRouter([
@@ -27,6 +30,7 @@ const router = createBrowserRouter([
       { path: "women", element: <Women /> },
       { path: "children", element: <Children /> },
       { path: "brands", element: <Brands /> },
+      { path: "membership", element: <Membership /> },
     ],
   },
   {
@@ -35,6 +39,8 @@ const router = createBrowserRouter([
     children: [
       { path: "login", element: <Login /> },
       { path: "signup", element: <Signup /> },
+      { path: "forgetpassword", element: <ForgetPassword /> },
+      { path: "resetpassword", element: <ResetPassword /> },
     ],
   }
 ]);

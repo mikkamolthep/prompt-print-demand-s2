@@ -23,6 +23,9 @@ export default function Navbar() {
               <Link to="/faqs">FAQs</Link>
             </li>
             <li>
+              <Link to="/faqs">Membership</Link>
+            </li>
+            <li>
               <Link to="/signup">
                 <img src="account.svg" alt="log-in" width={30} />
               </Link>
