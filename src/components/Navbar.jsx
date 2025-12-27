@@ -23,7 +23,7 @@ export default function Navbar() {
               <Link to="/faqs">FAQs</Link>
             </li>
             <li>
-              <Link to="/faqs">Membership</Link>
+              <Link to="/membership">Membership</Link>
             </li>
             <li>
               <Link to="/signup">
