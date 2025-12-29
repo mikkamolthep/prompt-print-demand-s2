@@ -60,7 +60,7 @@ export default function Membership() {
               <td className="px-6 py-4 text-sm text-yellow-600">รอชำระ</td>
               <td className="px-6 py-4 text-sm text-gray-900">568฿</td>
               <td className="px-6 py-4 text-sm text-blue-500">
-                <button className="hover:underline">ดูรายละเอียด</button>
+                <button className="hover:underline cursor-pointer">ดูรายละเอียด</button>
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
@@ -69,7 +69,7 @@ export default function Membership() {
               <td className="px-6 py-4 text-sm text-green-600">สำเร็จ</td>
               <td className="px-6 py-4 text-sm text-gray-900">1250฿</td>
               <td className="px-6 py-4 text-sm text-blue-500">
-                <button className="hover:underline">ดูรายละเอียด</button>
+                <button className="hover:underline cursor-pointer">ดูรายละเอียด</button>
               </td>
             </tr>
             <tr className="hover:bg-gray-50">
@@ -78,7 +78,7 @@ export default function Membership() {
               <td className="px-6 py-4 text-sm text-green-600">สำเร็จ</td>
               <td className="px-6 py-4 text-sm text-gray-900">751฿</td>
               <td className="px-6 py-4 text-sm text-blue-500">
-                <button className="hover:underline">ดูรายละเอียด</button>
+                <button className="hover:underline cursor-pointer">ดูรายละเอียด</button>
               </td>
             </tr>
           </tbody>
